@@ -542,6 +542,9 @@ footer .Like>div p {
     main .Container>div {
         padding: 0 10px;
     }
+    .IsLF .Profile .Rich .Icon {
+        padding: 0;
+    }
     .Main_wrapper .IsLF {
         width: 90%;
         margin: auto;
@@ -570,7 +573,7 @@ footer .Like>div p {
     }
     main .Container {
         height: 100%;
-        padding-bottom: 115px;
+        padding-bottom: 130px;
     }
     footer {
         position: relative;
