@@ -130,7 +130,7 @@ main .Container:before {
     z-index: -1;
     background-size: cover;
     filter: blur(5px);
-    background-image: url(https://cdn.lfio.net/Fur_15.jpg);
+    /* background-image: url(https://cdn.lfio.net/Fur_15.jpg); */
 }
 
 main .Container>div {
@@ -570,7 +570,7 @@ footer .Like>div p {
     }
     main .Container {
         height: 100%;
-        padding-bottom: 100px;
+        padding-bottom: 115px;
     }
     footer {
         position: relative;
@@ -594,7 +594,7 @@ footer .Like>div p {
     }
     footer .Foo_main {
         padding-left: 0;
-        padding: 0 20%;
+        padding: 0 10%;
     }
     footer .Foo_main .Ribbon {
         background: linear-gradient(to right, rgba(119, 119, 119, 0.8), rgba(72, 72, 72, 0.8), rgba(103, 103, 103, 0.8), rgba(60, 60, 60, 0.8));
