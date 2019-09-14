@@ -1,0 +1,1011 @@
+/*
++----------------------------------------------
+|  _     _____ _ _ ____    _   _ _____ _____ 
+| | |   |  ___/ / |___ \  | \ | | ____|_   _|
+| | |   | |_  | | | __) | |  \| |  _|   | |  
+| | |___|  _| | | |/ __/ _| |\  | |___  | |  
+| |_____|_|   |_|_|_____(_)_| \_|_____| |_|  
+|
+| Do you say now or never Or never too late?
++----------------------------------------------
+| Made with love by LF112 [https://lf112.net]
+| Author: LF112
+| ⚡Email: lf@lf112.net / QQ: 2275203821
+| ⭐️GitHUB.com/LF112 | Twitter.com/LF_Futiwolf
++----------------------------------------------
+*/
+
+@charset "UTF-8";
+*,
+body,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: 0 0;
+    word-wrap: break-word;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    font-family: Titillium Web, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, sans-serif
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #F2F2F2;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.lf_item {
+    margin-bottom: 10px;
+    margin-top: 4px;
+    box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+    background: linear-gradient(to right, rgba(49, 49, 49, 0.5), rgba(72, 72, 72, 0.6), rgba(84, 84, 84, 0.6), rgba(60, 60, 60, 0.6));
+    border-radius: 5px;
+    transition: all .5s ease;
+    display: inline-flex;
+}
+
+.lf_item>div {
+    min-height: 103px;
+    min-width: 260px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.lf_item>div .Ribbon {
+    position: absolute;
+    top: 0;
+}
+
+body {
+    position: relative;
+    background: #2e2e2c;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+header .motto {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+header .motto>div {
+    padding: 0 45px;
+    color: rgba(255, 255, 255, 55%);
+    font-size: 20px;
+    font-weight: bold;
+    /*border-right: 1px solid rgba(255, 255, 255, 0.2);*/
+}
+
+header .motto>div .TTl {
+    font-family: fontOne;
+    text-shadow: 0.05em 0.05em 0 rgba(6, 7, 25, 50%);
+}
+
+header .motto>div .Zhcn {
+    font-family: fontOne;
+}
+
+main {
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+main .Container {
+    position: relative;
+    height: calc(100vh - 140px);
+    background-size: cover;
+    background-position: 50%;
+    overflow: initial;
+}
+
+main .Container:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    filter: blur(5px);
+    background-image: url(https://cdn.lfio.net/Fur_15.jpg);
+}
+
+main .Container>div {
+    width: 100%;
+    padding: 0 25px;
+}
+
+main .Container>div .Main_wrapper {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+.Main_wrapper .IsLF {
+    position: relative;
+    width: 35%;
+    height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    float: left;
+    padding: 0 10px 0 15px;
+}
+
+.Main_wrapper .APP {
+    position: relative;
+    width: 65%;
+    float: left;
+    padding-right: 15px;
+}
+
+.IsLF>div {
+    width: 100%;
+    position: relative;
+}
+
+.IsLF .Profile {
+    width: 100%;
+    /* background: #212121; */
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+    border-radius: 4px;
+}
+
+.IsLF .Profile .Pic {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    border-radius: 5px;
+    padding-top: 1px;
+    margin: 0 auto;
+    border: 2px solid hsla(0, 0%, 53%, 0.6);
+}
+
+.IsLF .Profile .Pic img {
+    width: 225px;
+    height: 225px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 6s ease-out, -webkit-transform 6s ease-out;
+}
+
+.IsLF .Profile .Rich {
+    width: 100%;
+    position: relative;
+}
+
+.IsLF .Profile .Rich .MY {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.IsLF .Profile .Rich .MY>div {
+    display: inline-block;
+}
+
+.IsLF .Profile .Rich .MY>div p {
+    font-size: 2em;
+    margin-top: 2px;
+    padding: 0 25px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.IsLF .Profile .Rich .MY>div .Ribbon {
+    margin-top: 10px;
+    background: linear-gradient(to right, #eb6349, #eca474, #35d9e4, #636161, #878787);
+}
+
+.IsLF .Profile .Rich .Icon {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.IsLF .Profile .Rich .Icon li {
+    display: inline-flex;
+    min-width: 16px;
+    padding: 2px 8px 2px 4px;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.IsLF .Profile .Rich .Icon li>svg {
+    width: 16px;
+    height: 16px;
+}
+
+.IsLF .Profile .Rich .Icon li>p {
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: lighter;
+    padding-left: 5px;
+}
+
+.IsLF .Profile .Rich .Icon .un {
+    border-right: unset
+}
+
+.IsLF .Social_link {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IsLF .Social_link>div {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.IsLF .Social_link a {
+    display: inline-flex;
+    padding: 2px 8px 2px 4px;
+    cursor: pointer;
+    /* border-right: 2px solid rgba(255, 255, 255, 0.25); */
+}
+
+.IsLF .Social_link a:hover {
+    border-radius: 4px;
+    background: rgba(88, 88, 88, 0.5);
+}
+
+.IsLF .Social_link a>svg {
+    width: 28px;
+    height: 28px;
+}
+
+.IsLF .Social_link a>p {
+    color: #fdfdfd;
+    line-height: 28px;
+    padding-left: 2px;
+    font-size: 16px;
+}
+
+.APP ul {
+    width: 100%;
+    padding: 0 10%;
+}
+
+.APP>div {
+    padding: 25px 0;
+    height: calc(100vh - 140px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.APP .Magnet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 118px;
+}
+
+.APP .Magnet .lf_item {
+    margin-right: 25px
+}
+
+.APP .un {
+    margin-right: unset!important;
+}
+
+.Starwolf>div {
+    align-items: unset;
+    display: block;
+}
+
+.Starwolf .title {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: lighter;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.Starwolf .Profile {
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+.Starwolf .Profile .Pic {
+    border: 2px solid hsla(0, 0%, 53%, 0.6);
+    height: 54px;
+    border-radius: 50%;
+}
+
+.Starwolf .Profile .Pic>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.Starwolf .Profile .Never {
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+}
+
+.Starwolf .Profile .Never>svg {
+    width: 25px;
+    height: 25px;
+}
+
+.WebDev>div {
+    align-items: unset;
+    display: block;
+    padding-top: 3px
+}
+
+.WebDev p {
+    padding-left: 10px;
+    margin-top: 5px;
+    color: #fdfdfd;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.WebDev #LF_Time_WebDev {
+    width: 100%;
+    text-align: center;
+    padding-left: unset;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: FontOne;
+}
+
+.Separate {
+    height: 30px;
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Separate>div {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.43);
+}
+
+.Introduction {
+    background: rgba(134, 134, 134, 0.3);
+    border-radius: 2px;
+    width: 100%;
+}
+
+.Introduction>div {
+    width: 100%;
+    min-height: 300px;
+    padding: 15px;
+    display: unset;
+}
+
+.Introduction>div p {
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 5px 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: lighter;
+}
+
+.Separate>p {
+    width: 325px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.43);
+    line-height: 1;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+footer .NAVILAB {
+    text-align: center;
+    position: relative;
+    padding: 15px 5px;
+}
+
+footer .NAVILAB .thank {
+    color: rgba(115, 115, 115, 0.12);
+    font-size: 12px;
+    margin-top: -30px;
+}
+
+footer .NAVILAB>svg {
+    width: 62px;
+    height: 28px;
+    margin-bottom: -6px;
+}
+
+footer .Foo_main {
+    height: 32px;
+    position: relative;
+    margin-top: -4px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-left: 1px solid rgba(195, 195, 195, 0.18);
+}
+
+footer .Foo_main .Secondary {
+    display: flex;
+    position: relative;
+}
+
+footer .Foo_main .Ribbon {
+    position: absolute;
+    height: 3px;
+    background: linear-gradient(to right, rgba(119, 119, 119, 0.2), rgba(72, 72, 72, 0.2), rgba(103, 103, 103, 0.2), rgba(60, 60, 60, 0.2));
+}
+
+footer .Foo_main .Secondary>p,
+a,
+span {
+    line-height: 28px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.19);
+    font-weight: lighter;
+}
+
+footer .Foo_main .Secondary>p .LF {
+    font-family: fontOne;
+    color: rgba(255, 255, 255, 0.26);
+    font-weight: bold;
+}
+
+footer .Foo_main .Nbsp {
+    padding: 0 8px;
+    font-weight: lighter;
+}
+
+footer .Like {
+    position: absolute;
+    right: 25px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+footer .Like>div {
+    background: rgba(79, 89, 95, 0.4);
+    min-width: 50px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+
+footer .Like>div svg {
+    width: 28px;
+    height: 28px;
+}
+
+footer .Like>div p {
+    color: rgba(202, 202, 202, 0.6);
+    font-weight: bold;
+    text-align: center;
+    padding-right: 4px;
+    padding-left: 2px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 780px) {
+    header .Ribbon {
+        position: fixed;
+        top: 0;
+        z-index: 20;
+    }
+    main .Container>div .Main_wrapper {
+        display: inline-grid;
+    }
+    main .Container>div {
+        padding: 0;
+    }
+    .Main_wrapper .IsLF {
+        width: 90%;
+        margin: auto;
+        padding: 0 5px 0 5px;
+        margin-bottom: 25px;
+    }
+    .IsLF .Social_link>div {
+        padding: 0
+    }
+    .Main_wrapper .APP {
+        width: 100%;
+        padding-right: 0;
+    }
+    .APP .Magnet {
+        display: inline-grid;
+        width: 100%;
+    }
+    .APP ul {
+        padding: 0 35px;
+    }
+    .Separate>p {
+        width: 340px;
+    }
+    .APP .Magnet .lf_item {
+        margin-right: unset;
+    }
+    main .Container {
+        height: 100%;
+        padding-bottom: 100px;
+    }
+    footer {
+        position: relative;
+        display: inline-grid;
+    }
+    footer .Foo_main .Secondary {
+        display: inline-grid;
+        width: 100%;
+        text-align: center;
+    }
+    footer .Foo_main .Nbsp {
+        display: none;
+    }
+    footer .Like {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+    }
+    footer .Like>div {
+        background: rgba(103, 116, 123, 0.4);
+    }
+    footer .Foo_main {
+        padding-left: 0;
+        padding: 0 20%;
+    }
+    footer .Foo_main .Ribbon {
+        background: linear-gradient(to right, rgba(119, 119, 119, 0.8), rgba(72, 72, 72, 0.8), rgba(103, 103, 103, 0.8), rgba(60, 60, 60, 0.8));
+    }
+}
+
+.LF_Tag {
+    position: absolute;
+    left: 0;
+    margin-left: -4px;
+    z-index: 1;
+    margin-top: 20px;
+    font-weight: lighter;
+    top: 0;
+    line-height: 24px;
+}
+
+.LF_Tag svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.LF_Tag>div {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(240deg, rgba(100, 198, 244, 0.8) 0, rgba(53, 217, 228, 0.8) 100%);
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: -3px 5px 6px -5px rgba(0, 0, 0, .5);
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 4px;
+}
+
+.LF_Tag>div:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    top: -4px;
+    left: 0;
+    border-bottom: 2px solid rgba(65, 212, 232, 0.8);
+    border-right: 2px solid rgba(65, 212, 232, 0.8);
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+}
+
+.LF_Tag>div:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    right: -8px;
+    top: 0;
+    border-top: 12px solid rgba(96, 199, 243, 0.8);
+    border-left: 4px solid rgba(90, 202, 241, 0.8);
+    border-right: 4px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.Tip::after {
+    background: rgba(79, 89, 95, 0.4);
+    border-radius: 2px;
+    bottom: 100%;
+    color: #fff;
+    content: attr(data-tooltip);
+    display: block;
+    font-size: .7rem;
+    left: 50%;
+    max-width: 320px;
+    opacity: 0;
+    overflow: hidden;
+    font-weight: lighter;
+    padding: 2px 5px;
+    line-height: 20px;
+    pointer-events: none;
+    position: absolute;
+    text-overflow: ellipsis;
+    transform: translate(-50%, .4rem);
+    transition: opacity .2s, transform .2s;
+    white-space: pre;
+    z-index: 300;
+}
+
+.Tip:focus::after,
+.Tip:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -.2rem)
+}
+
+.Ribbon {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #37eff9, #0091e4, #64c6f4, #64c0ec);
+}
+
+@font-face {
+    font-family: 'fontOne';
+    font-display: swap;
+    src: url('Res.ttf') format('truetype')
+}
+
+.LF_beat {
+    -webkit-animation: haha 5s infinite ease-in-out;
+    animation: haha 5s infinite ease-in-out;
+    display: inline-block;
+    margin: 0 5px
+}
+
+@-webkit-keyframes haha {
+    2%,
+    24%,
+    80% {
+        -webkit-transform: translate(0, 1.5px) rotate(1.5deg);
+        transform: translate(0, 1.5px) rotate(1.5deg)
+    }
+    4%,
+    68%,
+    98% {
+        -webkit-transform: translate(0, -1.5px) rotate(-.5deg);
+        transform: translate(0, -1.5px) rotate(-.5deg)
+    }
+    38%,
+    6% {
+        -webkit-transform: translate(0, 1.5px) rotate(-1.5deg);
+        transform: translate(0, 1.5px) rotate(-1.5deg)
+    }
+    8%,
+    86% {
+        -webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+        transform: translate(0, -1.5px) rotate(-1.5deg)
+    }
+    10%,
+    72% {
+        -webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+        transform: translate(0, 2.5px) rotate(1.5deg)
+    }
+    12%,
+    64%,
+    78%,
+    96% {
+        -webkit-transform: translate(0, -.5px) rotate(1.5deg);
+        transform: translate(0, -.5px) rotate(1.5deg)
+    }
+    14%,
+    54% {
+        -webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+        transform: translate(0, -1.5px) rotate(1.5deg)
+    }
+    16% {
+        -webkit-transform: translate(0, -.5px) rotate(-1.5deg);
+        transform: translate(0, -.5px) rotate(-1.5deg)
+    }
+    18%,
+    22% {
+        -webkit-transform: translate(0, .5px) rotate(-1.5deg);
+        transform: translate(0, .5px) rotate(-1.5deg)
+    }
+    20%,
+    36%,
+    46% {
+        -webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+        transform: translate(0, -1.5px) rotate(2.5deg)
+    }
+    26%,
+    50% {
+        -webkit-transform: translate(0, .5px) rotate(.5deg);
+        transform: translate(0, .5px) rotate(.5deg)
+    }
+    28% {
+        -webkit-transform: translate(0, .5px) rotate(1.5deg);
+        transform: translate(0, .5px) rotate(1.5deg)
+    }
+    30%,
+    40%,
+    62%,
+    76%,
+    88% {
+        -webkit-transform: translate(0, -.5px) rotate(2.5deg);
+        transform: translate(0, -.5px) rotate(2.5deg)
+    }
+    32%,
+    34%,
+    66% {
+        -webkit-transform: translate(0, 1.5px) rotate(-.5deg);
+        transform: translate(0, 1.5px) rotate(-.5deg)
+    }
+    42% {
+        -webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+        transform: translate(0, 2.5px) rotate(-1.5deg)
+    }
+    44%,
+    70% {
+        -webkit-transform: translate(0, 1.5px) rotate(.5deg);
+        transform: translate(0, 1.5px) rotate(.5deg)
+    }
+    48%,
+    74%,
+    82% {
+        -webkit-transform: translate(0, -.5px) rotate(.5deg);
+        transform: translate(0, -.5px) rotate(.5deg)
+    }
+    52%,
+    56%,
+    60% {
+        -webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+        transform: translate(0, 2.5px) rotate(2.5deg)
+    }
+    58% {
+        -webkit-transform: translate(0, .5px) rotate(2.5deg);
+        transform: translate(0, .5px) rotate(2.5deg)
+    }
+    84% {
+        -webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+        transform: translate(0, 1.5px) rotate(2.5deg)
+    }
+    90% {
+        -webkit-transform: translate(0, 2.5px) rotate(-.5deg);
+        transform: translate(0, 2.5px) rotate(-.5deg)
+    }
+    92% {
+        -webkit-transform: translate(0, .5px) rotate(-.5deg);
+        transform: translate(0, .5px) rotate(-.5deg)
+    }
+    94% {
+        -webkit-transform: translate(0, 2.5px) rotate(.5deg);
+        transform: translate(0, 2.5px) rotate(.5deg)
+    }
+    0%,
+    100% {
+        -webkit-transform: translate(0, 0) rotate(0);
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+@keyframes haha {
+    2%,
+    24%,
+    80% {
+        -webkit-transform: translate(0, 1.5px) rotate(1.5deg);
+        transform: translate(0, 1.5px) rotate(1.5deg)
+    }
+    4%,
+    68%,
+    98% {
+        -webkit-transform: translate(0, -1.5px) rotate(-.5deg);
+        transform: translate(0, -1.5px) rotate(-.5deg)
+    }
+    38%,
+    6% {
+        -webkit-transform: translate(0, 1.5px) rotate(-1.5deg);
+        transform: translate(0, 1.5px) rotate(-1.5deg)
+    }
+    8%,
+    86% {
+        -webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+        transform: translate(0, -1.5px) rotate(-1.5deg)
+    }
+    10%,
+    72% {
+        -webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+        transform: translate(0, 2.5px) rotate(1.5deg)
+    }
+    12%,
+    64%,
+    78%,
+    96% {
+        -webkit-transform: translate(0, -.5px) rotate(1.5deg);
+        transform: translate(0, -.5px) rotate(1.5deg)
+    }
+    14%,
+    54% {
+        -webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+        transform: translate(0, -1.5px) rotate(1.5deg)
+    }
+    16% {
+        -webkit-transform: translate(0, -.5px) rotate(-1.5deg);
+        transform: translate(0, -.5px) rotate(-1.5deg)
+    }
+    18%,
+    22% {
+        -webkit-transform: translate(0, .5px) rotate(-1.5deg);
+        transform: translate(0, .5px) rotate(-1.5deg)
+    }
+    20%,
+    36%,
+    46% {
+        -webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+        transform: translate(0, -1.5px) rotate(2.5deg)
+    }
+    26%,
+    50% {
+        -webkit-transform: translate(0, .5px) rotate(.5deg);
+        transform: translate(0, .5px) rotate(.5deg)
+    }
+    28% {
+        -webkit-transform: translate(0, .5px) rotate(1.5deg);
+        transform: translate(0, .5px) rotate(1.5deg)
+    }
+    30%,
+    40%,
+    62%,
+    76%,
+    88% {
+        -webkit-transform: translate(0, -.5px) rotate(2.5deg);
+        transform: translate(0, -.5px) rotate(2.5deg)
+    }
+    32%,
+    34%,
+    66% {
+        -webkit-transform: translate(0, 1.5px) rotate(-.5deg);
+        transform: translate(0, 1.5px) rotate(-.5deg)
+    }
+    42% {
+        -webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+        transform: translate(0, 2.5px) rotate(-1.5deg)
+    }
+    44%,
+    70% {
+        -webkit-transform: translate(0, 1.5px) rotate(.5deg);
+        transform: translate(0, 1.5px) rotate(.5deg)
+    }
+    48%,
+    74%,
+    82% {
+        -webkit-transform: translate(0, -.5px) rotate(.5deg);
+        transform: translate(0, -.5px) rotate(.5deg)
+    }
+    52%,
+    56%,
+    60% {
+        -webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+        transform: translate(0, 2.5px) rotate(2.5deg)
+    }
+    58% {
+        -webkit-transform: translate(0, .5px) rotate(2.5deg);
+        transform: translate(0, .5px) rotate(2.5deg)
+    }
+    84% {
+        -webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+        transform: translate(0, 1.5px) rotate(2.5deg)
+    }
+    90% {
+        -webkit-transform: translate(0, 2.5px) rotate(-.5deg);
+        transform: translate(0, 2.5px) rotate(-.5deg)
+    }
+    92% {
+        -webkit-transform: translate(0, .5px) rotate(-.5deg);
+        transform: translate(0, .5px) rotate(-.5deg)
+    }
+    94% {
+        -webkit-transform: translate(0, 2.5px) rotate(.5deg);
+        transform: translate(0, 2.5px) rotate(.5deg)
+    }
+    0%,
+    100% {
+        -webkit-transform: translate(0, 0) rotate(0);
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+::-webkit-scrollbar {
+    background: rgba(0, 0, 0, .05);
+    width: 6px;
+    height: 6px;
+    -webkit-appearance: none;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-button,
+ ::-webkit-scrollbar-corner,
+ ::-webkit-scrollbar-track,
+ ::-webkit-scrollbar-track-piece {
+    background: transparent;
+    display: none;
+}
+
+::-webkit-scrollbar-button,
+ ::-webkit-scrollbar-corner,
+ ::-webkit-scrollbar-track,
+ ::-webkit-scrollbar-track-piece {
+    background: transparent;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 4px;
+    height: 4px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+::-webkit-scrollbar-button,
+ ::-webkit-scrollbar-corner,
+ ::-webkit-scrollbar-track,
+ ::-webkit-scrollbar-track-piece {
+    background: transparent;
+    display: none;
+}
+
+::-webkit-scrollbar-button,
+ ::-webkit-scrollbar-corner,
+ ::-webkit-scrollbar-track,
+ ::-webkit-scrollbar-track-piece {
+    background: transparent;
+    display: none;
+}
+
+::selection {
+    background: #b2b8c1;
+    color: #0bf;
+}
