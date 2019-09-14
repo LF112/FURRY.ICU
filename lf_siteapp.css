@@ -540,7 +540,7 @@ footer .Like>div p {
         display: inline-grid;
     }
     main .Container>div {
-        padding: 0;
+        padding: 0 10px;
     }
     .Main_wrapper .IsLF {
         width: 90%;
@@ -560,7 +560,7 @@ footer .Like>div p {
         width: 100%;
     }
     .APP ul {
-        padding: 0 35px;
+        padding: 0 2px;
     }
     .Separate>p {
         width: 340px;
