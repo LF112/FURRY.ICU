@@ -170,7 +170,6 @@ main .Container>div .Main_wrapper {
     width: 100%;
     /* background: #212121; */
     padding: 10px 0;
-    box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
     border-radius: 4px;
 }
 
@@ -181,7 +180,7 @@ main .Container>div .Main_wrapper {
     border-radius: 5px;
     padding-top: 1px;
     margin: 0 auto;
-    border: 2px solid hsla(0, 0%, 53%, 0.6);
+    border: 2px solid hsla(0, 0%, 53%, 0.4);
 }
 
 .IsLF .Profile .Pic img {
@@ -402,7 +401,7 @@ main .Container>div .Main_wrapper {
 }
 
 .Introduction {
-    background: rgba(134, 134, 134, 0.3);
+    background: rgba(90, 90, 90, 0.3);
     border-radius: 2px;
     width: 100%;
 }
